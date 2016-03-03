@@ -102,5 +102,5 @@ class TestSequenceFunctions(unittest.TestCase):
 		fe.title('some title')
 		fe.content('content', type='CDATA')
 		result = fg.atom_str()
-		assert '<content type="CDATA"><![CDATA[content]]></content>' in result
+		assert b'<content type="CDATA"><![CDATA[content]]></content>' in result
 
